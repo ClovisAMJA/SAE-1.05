@@ -1,4 +1,15 @@
 /*STYLE CSS*//*---------------------------------------------------*/
+
+/*Fonts*//*-----------------------------------------------*/
+@font-face {
+    font-family: "Boogaloo";
+    src: url("../assets/fonts/boogaloo/boogaloo.woff2") format("woff2"),
+        url("../assets/fonts/boogaloo/boogaloo.woff") format("woff");
+
+    font-weight: bold;
+    font-style: regular;
+}
+
 /*Style du body*//*-----------------------------------------------*/
 body {
    
