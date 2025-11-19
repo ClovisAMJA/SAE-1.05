@@ -1,38 +1,164 @@
 /*STYLE CSS*//*---------------------------------------------------*/
+
+/*Fonts*//*-----------------------------------------------*/
+@font-face {
+    font-family: "Boogaloo";
+    src: url("../assets/fonts/boogaloo/boogaloo.woff2") format("woff2"),
+        url("../assets/fonts/boogaloo/boogaloo.woff") format("woff");
+
+    font-weight: bold;
+    font-style: regular;
+}
+
 /*Style du body*//*-----------------------------------------------*/
-body
-{
+body {
    
 }
-/*Style du header*//*---------------------------------------------*/
-header
-{
+/*Style du header ---------------------------------------------*/
+/* Header */
+    /* Affichage global */
+header:not(main header) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #383838;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    padding: 0 1.2em;
+    
+    font-family: "Boogaloo", fantasy;
+    font-size: 1.6em;
 }
+
+header:not(main header) h1 {
+    color: #F2CB05;
+    margin: 0;
+}
+
+header:not(main header) li {
+    display: inline-block;
+}
+
+header:not(main header) a {
+    color: #F2CB05;
+    text-decoration: none;
+    background-color: #A61420;
+    padding: 0.4em 0.8em;
+    margin-left: 0.6em;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+
+    transition: background-color 0.5s, color 0.5s;
+}
+
+
+    /* Icones des boutons */
+header:not(main header) div {
+    height: 30px;
+    width: 30px;
+
+    margin-right: 0.5em;
+    background-size: contain;
+
+    transition: background-image 0.5s;
+}
+
+header:not(main header) li:nth-of-type(1) div {
+    background-image: url('assets/imgs/icons/icon_lieu_jaune.png');
+}
+
+header:not(main header) li:nth-of-type(2) div {
+    background-image: url('assets/imgs/icons/icon_livre_jaune.png');
+}
+
+header:not(main header) li:nth-of-type(3) div {
+    background-image: url('assets/imgs/icons/icon_personnage_jaune.png');
+}
+
+header:not(main header) li:nth-of-type(4) div {
+    background-image: url('assets/imgs/icons/icon_gastronomie_jaune.png');
+}
+
+    /* Effets au survol */
+header:not(main header) a:hover {
+    background-color: #F2CB05;
+    color: #A61420;
+}
+
+header:not(main header) li:nth-of-type(1):hover div {
+    background-image: url('assets/imgs/icons/icon_lieu_rouge.png');
+}
+
+header:not(main header) li:nth-of-type(2):hover div {
+    background-image: url('assets/imgs/icons/icon_livre_rouge.png');
+}
+
+header:not(main header) li:nth-of-type(3):hover div {
+    background-image: url('assets/imgs/icons/icon_personnage_rouge.png');
+}
+
+header:not(main header) li:nth-of-type(4):hover div {
+    background-image: url('assets/imgs/icons/icon_gastronomie_rouge.png');
+}
+/*Style du header*//*-----------------------------------------------*/
+main header {
+    text-align: center;
+    font-family: "Boogaloo", fantasy;
+    font-size: 1.5em;
+}
+
+main header h1 {
+    color: #A61420;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+main header hr {
+    width: 50%;
+    border: 1px solid #383838;
+}
+
+main header p {
+    margin: 0;
+    color: #F29F05;
+    width: 50%;
+    margin: auto;
+}
+
 /*Style du main*//*-----------------------------------------------*/
-main
-{
+main {
+    margin-top: 7.5em;
+
 }
 /*Style du footer*//*---------------------------------------------*/
-footer
-{
+footer {
+
 }
 /*Style du menu*//*-----------------------------------------------*/
-details
-{
+details {
+
 }
 /*Style de la section*//*-----------------------------------------*/
-section
-{
+section {
+
 }
 /*Style de l'article*//*------------------------------------------*/
-article
-{
+article {
+
 }
 /*Style du paragraphe*//*-----------------------------------------*/
-p
-{
+p {
+
 }
 /*Style du titre*//*----------------------------------------------*/
-h1
-{
+h1 {
+
 }
