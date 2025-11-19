@@ -108,9 +108,34 @@ header:not(main header) li:nth-of-type(3):hover div {
 header:not(main header) li:nth-of-type(4):hover div {
     background-image: url('assets/imgs/icons/icon_gastronomie_rouge.png');
 }
+/*Style du header*//*-----------------------------------------------*/
+main header {
+    text-align: center;
+    font-family: "Boogaloo", fantasy;
+    font-size: 1.5em;
+}
+
+main header h1 {
+    color: #A61420;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+main header hr {
+    width: 50%;
+    border: 1px solid #383838;
+}
+
+main header p {
+    margin: 0;
+    color: #F29F05;
+    width: 50%;
+    margin: auto;
+}
+
 /*Style du main*//*-----------------------------------------------*/
 main {
-    margin-top: 8em;
+    margin-top: 7.5em;
 
 }
 /*Style du footer*//*---------------------------------------------*/
