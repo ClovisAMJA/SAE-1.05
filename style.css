@@ -185,6 +185,11 @@ article article div {
   align-items: center;
 }
 
+article article div h3 {
+  text-transform: uppercase;
+  font-family: "Boogaloo", fantasy;
+  font-size: 1.5em;
+}
 /*Style du paragraphe*//*-----------------------------------------*/
 p {
 
