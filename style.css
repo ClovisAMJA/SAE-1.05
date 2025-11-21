@@ -3,16 +3,24 @@
 /*Fonts*//*-----------------------------------------------*/
 @font-face {
   font-family: "Boogaloo";
-  src: url("../assets/fonts/boogaloo/boogaloo.woff2") format("woff2"),
-  url("../assets/fonts/boogaloo/boogaloo.woff") format("woff");
+  src: url("assets/fonts/boogaloo/boogaloo.woff2") format("woff2"),
+  url("assets/fonts/boogaloo/boogaloo.woff") format("woff");
 
   font-weight: bold;
-  font-style: regular;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Almarai";
+  src: url("assets/fonts/almarai/Almarai-Regular.woff") format("woff");
+
+  font-weight: normal;
+  font-style: normal;
 }
 
 /*Style du body*//*-----------------------------------------------*/
 body {
-
+  font-family:  "Almarai", "Arial",  sans-serif;
 }
 /*Style du header ---------------------------------------------*/
 /* Header */
