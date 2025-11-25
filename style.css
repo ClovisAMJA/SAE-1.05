@@ -180,7 +180,11 @@ section > div {
 }
 
 section > div > article {
-  flex-basis: 30%;
+  flex-basis: 28%;
+}
+
+section > div > article > img {
+  width: 100%;
 }
 
 /*Style de l'article*//*------------------------------------------*/
