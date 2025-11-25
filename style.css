@@ -157,8 +157,32 @@ details {
 }
 /*Style de la section*//*-----------------------------------------*/
 section {
+  background-color: #D9D9D9;
+  border-radius: 25px;
 
+  padding: 0.5em;
+  margin: 2em;
 }
+
+section > h2 {
+  text-align: center;
+  text-transform: uppercase;
+
+  font-family: "Boogaloo", fantasy;
+  font-size: 4em;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+section > div {
+  display:  flex;
+  flex-wrap: wrap;
+}
+
+section > div > article {
+  flex-basis: 30%;
+}
+
 /*Style de l'article*//*------------------------------------------*/
 article {
 
@@ -216,4 +240,19 @@ table {
   text-align: center;
 
   margin: auto;
+}
+
+/*Style des images *//*----------------------------------------------*/
+img {
+  border-radius: 25px;
+}
+
+/*Style des boutons *//*----------------------------------------------*/
+button {
+  background-color: #A61420;
+  border-radius: 10px;
+
+  border: none;
+
+  color: #F2CB05;
 }
