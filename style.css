@@ -266,6 +266,21 @@ article article div h3 {
   font-family: "Boogaloo", fantasy;
   font-size: 1.5em;
 }
+
+.Accueil article {
+
+  float: right;
+}
+
+.Accueil article{
+
+  height: fit-content;
+}
+
+.Accueil .agrandissement{
+
+
+}
 /*Style du paragraphe*//*-----------------------------------------*/
 p {
 
