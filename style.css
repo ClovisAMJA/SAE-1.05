@@ -256,3 +256,31 @@ button {
 
   color: #F2CB05;
 }
+
+/*Style des éléments page d'Accueil*//*-------------------------------*/
+
+
+.Accueil article figure{
+
+  float: right;
+}
+.Accueil .conteneurImg{
+
+  position: relative;
+  overflow: visible;
+}
+
+.Accueil .conteneurImg > .imgAccueil{
+
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.Accueil .conteneurImg > .imgAccueil:hover{
+
+  position: absolute;
+  transform: scale(2.4);
+  z-index: 999;
+  top: 5em;
+  left: 14em;
+}
