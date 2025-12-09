@@ -354,117 +354,165 @@ img {
 
 
 
-
-
-.Yamal article:nth-of-type(2) img:nth-of-type(1) ,img:nth-of-type(3){
-
-  width: 32px;
-  height: 32px;
+.Yamal main section:nth-of-type(1){
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 1.2em;
 }
 
-.Yamal article:nth-of-type(2) figure:nth-of-type(1) img{
-
-  width: 150px;
-  height: 100px;
-}
-
-
-.Yamal article:nth-of-type(2) figure:nth-of-type(2) img{
-
-  width: 300px;
-  height: 175px;
-  float :left
-}
-
-.Yamal article:nth-of-type(3) figure:nth-of-type(1) img{
-
-  width: 300px;
-  height: 170px;
+.Yamal main section:nth-of-type(1) article:nth-last-child(2){
+  width: 50%;
 }
 
 
 
+/*Application des grilles sur les 3 premiers articles*/
+
+
+.Yamal section:nth-of-type(1) article:nth-of-type(1){
+  display : grid;
+  grid-template-columns: repeat(10,10%);
+  grid-template-rows: repeat(2,50%);
+ }
+
+/*article 1 sur la présentation*/
 
 
 
-
-
-
-
-
-/*article 1 sur la biographie*/
-
-
-
-.Yamal article:nth-of-type(1) div:nth-of-type(2){
-  grid-area: 1;
+.Yamal section:nth-of-type(1) article:nth-of-type(1) div:nth-of-type(1){
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  text-align: center;
 }
 
-.Yamal article:nth-of-type(1) div:nth-of-type(1){
-  grid-area: 2/1/1/2;
 
+
+.Yamal section:nth-of-type(1) article:nth-of-type(1) div:nth-of-type(2){
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 5;
+  grid-column-end: 10;
 }
 
-.Yamal article:nth-of-type(1) figure:nth-of-type(1) img{
-  float: right;
+.Yamal section:nth-of-type(1) article:nth-of-type(1) figure:nth-of-type(1) img{
   width: 50%;
   height: 50%;
 }
 
 
+/*article 2 sur ou le retrouver*/
 
-
-
-
-
-/*article 4 sur le palmares*/
-
-.Yamal article:nth-of-type(4){
-  padding: 20px;
-}
-
-
-
-.Yamal article:nth-of-type(4) img{
-
-  width: 400px;
-  height: 250px;
-  position: absolute;
-  top : 2740px;
-  left: 500px;
-}
-
-.Yamal article:nth-of-type(4) div:nth-of-type(2){
-  width: 200px;
-  text-align: left;
-  float: left;
-
-}
-.Yamal article:nth-of-type(4) div:nth-of-type(1){
-  width: 350px;
-  height: 100px;
-  text-align: left;
-  float: right;
-}
-
-
-/*Application des grilles sur les 3 premiers articles*/
-
-.Yamal section:nth-of-type(1){
-}
-
-.Yamal section article:nth-of-type(1){
+.Yamal section:nth-of-type(1) article:nth-of-type(2){
   display : grid;
-  grid grid-template-columns: repeat(2,"50%");
-  grid-template-rows: repeat(1,"100%");
+  grid-template-columns: repeat(10,10%);
+  grid-template-rows: repeat(10,10%);
+  height: 20em;
+ }
+
+.Yamal section:nth-of-type(1) article:nth-of-type(2) div{
+  grid-area: 1/10/1/1
+}
+
+.Yamal section:nth-of-type(1) article:nth-of-type(2) p:nth-of-type(1){
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 6;
+  grid-column-end: 10;
+}
+
+.Yamal section:nth-of-type(1) article:nth-of-type(2) p:nth-of-type(2){
+  grid-row-start: 7;
+  grid-row-end: 8;
+  grid-column-start: 6;
+  grid-column-end: 10;
+}
+
+
+ .Yamal section:nth-of-type(1) article:nth-of-type(2) img:nth-of-type(1) img:nth-of-type(3){
+  width: 32px;
+  height: 32px;
+}
+
+
+
+.Yamal section:nth-of-type(1) article:nth-of-type(2) figure:nth-of-type(1){
+  grid-row-start:2;
+  grid-column-start: 2;
+}
+
+.Yamal section:nth-of-type(1) article:nth-of-type(2) figure:nth-of-type(2){
+  grid-row-start:5;
+  grid-column-start: 1;
+}
+
+
+.Yamal section:nth-of-type(1) article:nth-of-type(2) figure:nth-of-type(1) img{
+  width: 160px;
+  height: 100px;
+}
+
+
+.Yamal section:nth-of-type(1) article:nth-of-type(2) figure:nth-of-type(2) img{
+  width: 275px;
+  height: 175px;
+}
+
+/*article 3 sur les activités*/
+
+
+.Yamal article:nth-of-type(3) figure:nth-of-type(1) img{
+  width: 300px;
+  height: 170px;
+}
+
+/*article 4 sur la biographie*/
+
+
+
+.Yamal section:nth-of-type(2) article:nth-of-type(1){
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 1 1 300px;
+ }
+
+ .Yamal section:nth-of-type(2) article:nth-of-type(1) p{
+  width: fit-content;
  }
 
 
 
-/*article 0 sur la présentation*/
-
-
-
-.Yamal section article:nth-of-type(1) div:nth-of-type(1){
+.Yamal section:nth-of-type(2) article:nth-of-type(1) img{  
+  display: flex;
+  flex: 1 1 100px;
+  width: 30%;
+  height: 30%;
+  float: right;
+  margin-left: 1em;
 }
+
+
+/*article 5 sur la formation*/
+
+
+/*article 6 sur les débuts professionnel*/
+
+
+/*article 7 sur le palmares*/
+
+/*article 8 sur les débuts avec la nation*/
+
+
+
+
+
+
+
+
+
+
+
 
