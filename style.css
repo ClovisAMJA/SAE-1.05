@@ -352,11 +352,9 @@ img {
 /*Style de yamal*//*-----------------------------------------*/
 
 
-.Yamal article:nth-of-type(1) img{
 
-  width: 400px;
-  height: 400px;
-}
+
+
 
 .Yamal article:nth-of-type(2) img:nth-of-type(1) ,img:nth-of-type(3){
 
@@ -375,6 +373,7 @@ img {
 
   width: 300px;
   height: 175px;
+  float :left
 }
 
 .Yamal article:nth-of-type(3) figure:nth-of-type(1) img{
@@ -386,9 +385,65 @@ img {
 
 
 
+
+
+
+
+
+
+
+/*article 1 sur la biographie*/
+
+
+
+.Yamal article:nth-of-type(1) div:nth-of-type(1){
+  text-align: left;
+
+}
+
+
+
+
+
+
+
+
+
+/*article 4 sur le palmares*/
+
+.Yamal article:nth-of-type(4){
+  padding: 20px;
+}
+
+
+
+.Yamal article:nth-of-type(4) img{
+
+  width: 400px;
+  height: 250px;
+  position: absolute;
+  top : 2740px;
+  left: 500px;
+}
+
+.Yamal article:nth-of-type(4) div:nth-of-type(2){
+  width: 200px;
+  text-align: left;
+  float: left;
+
+}
+.Yamal article:nth-of-type(4) div:nth-of-type(1){
+  width: 350px;
+  height: 100px;
+  text-align: left;
+  float: right;
+}
+
+
+/*Application des grilles sur les 3 premiers articles*/
+
 .Yamal section:nth-of-type(1){
   display : grid;
-
   grid grid-template-columns: repeat(44, 2.17%);
   grid-template-rows: repeat(32,3.125%);
 }
@@ -401,17 +456,36 @@ img {
 }
 
 .Yamal section article:nth-of-type(2){
-  grid-row-start: 17;
+  grid-row-start: 18;
   grid-column-start: 1;
-  grid-column-end: 21;
+  grid-column-end: 23;
   grid-row-end: 32;
 }
 
 
-.Yamal section article:nth-of-type(2){
-  grid-row-start: 19;
+.Yamal section article:nth-of-type(3){
+  grid-row-start: 18;
   grid-column-start: 23;
   grid-column-end: 44;
   grid-row-end: 32;
+}
+
+
+
+/*article 0 sur la présentation*/
+
+
+
+.Yamal section article:nth-of-type(1) div:nth-of-type(1){
+  grid-area: 1/1/23/15;
+}
+
+.Yamal section article:nth-of-type(1) div:nth-of-type(2){
+  grid-area:  1/15/44/15;
+}
+
+.Yamal section article:nth-of-type(1) div:nth-of-type(2) img{
+  width: 40%;
+
 }
 
