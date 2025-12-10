@@ -357,8 +357,8 @@ img {
   width: 10em;
   height: 10em;
   position: relative;
-  left: 5em;
-  top: 20em;
+  right: 12em;
+  top: 5em;
   z-index: 2;
 }
 
@@ -366,8 +366,8 @@ img {
   width: 10em;
   height: 10em;
   position: relative;
-  right: 30em;
-  top: 30em;
+  left: 15em;
+  top: 1em;
   z-index: 3;
 }
 .sagrada section:nth-of-type(2){
@@ -394,4 +394,14 @@ img {
 
 .sagrada section:nth-of-type(2) article figure {
   flex-basis: 66%;
+}
+
+.sagrada h3{
+  display: flex;
+  align-content: center;
+}
+
+.sagrada section:nth-of-type(3){
+  display: flex;
+  flex-direction: row;
 }
