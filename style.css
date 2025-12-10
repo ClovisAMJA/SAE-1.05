@@ -322,11 +322,26 @@ table {
 /*Style des images *//*----------------------------------------------*/
 img {
   border-radius: 25px;
+} 
+
+/*CSS Index Sagrada Familia*/
+.indexsagrada img{
+  width: 50 em;
+  height: 50 em;
 }
-
-
 
 /*CSS Sagrada Familia*/
 .sagrada section {
   background-color: white;
 }
+
+.sagrada article:nth-of-type(1) img:nth-of-type(1){
+  width: 20em;
+  height: 20em;
+}
+
+.sagrada section:nth-of-type(2){
+  flex-direction: row;
+  justify-content: end;
+}
+
