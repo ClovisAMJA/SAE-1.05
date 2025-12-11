@@ -394,6 +394,40 @@ img {
   margin-bottom: 0.25em;
 }
 
+.paella section > article:nth-of-type(1) img:nth-of-type(1) {
+  position: relative;
+  left: 22em;
+  bottom: 37em;
+
+  z-index: 1;
+  width: 33%;
+}
+
+.paella section > article:nth-of-type(1) img:nth-of-type(2) {
+  position: relative;
+  bottom: 30em;
+  width: 33%;
+
+}
+
+#imgpaella_mixte1 {
+  left: 6em;
+}
+
+#imgpaëlla_fruit_mer0 {
+  bottom: 40em
+}
+
+#imgpaëlla_fruit_mer1 {
+  bottom: 33em
+}
+
+.paella section > article:nth-of-type(1) img:nth-of-type(2):hover {
+  z-index: 2;
+  /* TODO : Transition apparition */
+}
+
+
   /* Bloc Description */
 .paella section > article:nth-of-type(2) {
   grid-area: 1 / 31 / 12 / 47;
@@ -493,7 +527,8 @@ img {
 }
 
 .paella section > article:nth-of-type(7) div:nth-of-type(2) img {
-  width: 40%;
+  width: 45%;
+
 }
 
   /*Bloc Le saviez-vous ? */
