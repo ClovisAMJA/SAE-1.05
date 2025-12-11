@@ -259,28 +259,94 @@ button {
 
 /*Style des éléments page d'Accueil*//*-------------------------------*/
 
+.Accueil article{
 
+  overflow: auto;
+}
 .Accueil article figure{
 
   float: right;
 }
-.Accueil .conteneurImg{
 
-  position: relative;
-  overflow: visible;
+.Accueil #carte{
+
+  width: 450px;
+  height: 300px;
 }
 
-.Accueil .conteneurImg > .imgAccueil{
+.Accueil article h3{
 
-  width: 250px;
-  transition: transform 0.3s ease;
+  font-size: 1.5em;
 }
 
-.Accueil .conteneurImg > .imgAccueil:hover{
+.Accueil article p{
 
-  position: absolute;
-  transform: scale(2.4);
-  z-index: 999;
-  top: 5em;
-  left: 14em;
+  line-height: 1.2em;
+}
+
+.Accueil iframe{
+
+  width:600px;
+  height: 350px;
+  border:0;
+  border-radius: 10px;
+}
+
+.Accueil #devise{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex: 1 1 auto;
+}
+
+.Accueil #armoiries {
+
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex: 1 1 auto;
+}
+
+.Accueil #armoiries img{
+
+  width: 300px;
+  height:200px;
+}
+
+.Accueil #devise img{
+
+  width: 140px;
+  height:200px;
+}
+
+.Accueil #anciennemonnaie {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex: 1 1 auto;
+}
+
+.Accueil #euro {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex: 1 1 auto;
+}
+
+
+.Accueil #anciennemonnaie img{
+
+  width: 300px;
+  height:200px;
+}
+
+.Accueil #euro img{
+
+  width: 300px;
+  height:200px;
 }
