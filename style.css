@@ -337,9 +337,6 @@ img {
 
   grid-template-columns: repeat(46, 2.17%);
   grid-template-rows: repeat(71, 30px);
-
-  /*grid-template-columns: repeat(46, 30px);
-  grid-template-rows: repeat(73, 30px);*/
 }
 
   /* Bloc Recettes */
@@ -378,6 +375,10 @@ img {
   border-radius: 10px;
 }
 
+.paella section > article:nth-of-type(1) select:focus {
+  border-radius: 10px 10px 0 0;
+}
+
 .paella section > article:nth-of-type(1) h3 {
   margin-bottom: 0.2em;
 
@@ -407,7 +408,6 @@ img {
   position: relative;
   bottom: 30em;
   width: 33%;
-
 }
 
 #imgpaella_mixte1 {
@@ -420,11 +420,6 @@ img {
 
 #imgpaëlla_fruit_mer1 {
   bottom: 33em
-}
-
-.paella section > article:nth-of-type(1) img:nth-of-type(2):hover {
-  z-index: 2;
-  /* TODO : Transition apparition */
 }
 
 
