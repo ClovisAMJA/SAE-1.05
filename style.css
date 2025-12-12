@@ -147,10 +147,92 @@ main {
   margin-top: 7.5em;
 }
 
+
 /*Style du footer*//*---------------------------------------------*/
 footer {
+  position: absolute;
+  right: 0;
+  left: 0;
 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0.3em 1em;
+
+  background-color: #383838;
+  color: #F2CB05;
 }
+
+footer div {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 0.5em;
+
+  align-items: center;
+  justify-content: center;
+}
+
+footer img {
+  border-radius: 0;
+  width: 90px;
+  height: auto;
+}
+
+footer a {
+  text-decoration: none;
+  color: #F29F05;
+
+  font-variant: small-caps;
+
+
+  cursor: pointer;
+}
+
+/*Bouton haut de page*//*---------------------------------------------*/
+a button {
+
+  width: 50px;
+  height: 50px;
+
+  background-color: #F2CB05;
+  background-image: url('assets/imgs/icons/icon_fleche_rouge.png');
+  background-size: contain;
+
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  transition: background-image 0.5s, background-color 0.5s;
+}
+
+a button:hover {
+  background-color: #A61420;
+  background-image: url('assets/imgs/icons/icon_fleche_jaune.png');
+}
+
+footer a p {
+  opacity: 0;
+
+  position: absolute;
+  bottom: 4.5em;
+  right:  0.5em;
+  background-color: #383838;
+  color: #D9D9D9;
+
+  padding: 0.4em;
+  border-radius:  10px;
+
+  transition: opacity 0.5s;
+}
+
+footer a:hover p {
+  display: block;
+  opacity: 1;
+}
+
 /*Style du menu*//*-----------------------------------------------*/
 details {
 
