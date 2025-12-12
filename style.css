@@ -56,6 +56,9 @@ header:not(main header) li {
 header:not(main header) a {
   color: #F2CB05;
   text-decoration: none;
+}
+
+header:not(main header) a:not(h1 a) {
   background-color: #A61420;
   padding: 0.4em 0.8em;
   margin-left: 0.6em;
@@ -96,7 +99,7 @@ header:not(main header) li:nth-of-type(4) div {
   background-image: url('assets/imgs/icons/icon_gastronomie_jaune.png');
 }
 
-header:not(main header) a:hover {
+header:not(main header) a:hover:not(h1 a) {
   background-color: #F2CB05;
   color: #A61420;
 }
@@ -1037,17 +1040,17 @@ img {
 }
 
 .Accueil #diaporama > div:nth-child(1) {
-  background-image: url('images/iloveimg-resized/imageEsp1.png');
+  background-image: url('assets/imgs/accueil/caroussel/imageEsp1.png');
   animation-delay: 0s;
 }
 
 .Accueil #diaporama > div:nth-child(2) {
-  background-image: url('images/iloveimg-resized/imageEsp2.jpg');
+  background-image: url('assets/imgs/accueil/caroussel/imageEsp2.jpg');
   animation-delay: -4s;
 }
 
 .Accueil #diaporama > div:nth-child(3) {
-  background-image: url('images/iloveimg-resized/imageEsp3.png');
+  background-image: url('assets/imgs/accueil/caroussel/imageEsp3.png');
   animation-delay: -8s;
 }
 
