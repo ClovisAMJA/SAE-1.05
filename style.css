@@ -377,6 +377,19 @@ button {
   text-align: justify;
 }
 
+.Accueil #Maps {
+
+  background-color: #A61420;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 0.7em;
+  margin-left: 1em;
+}
+.Accueil #Maps a{
+  color:#F2CB05;
+  text-decoration: none;
+}
+
 /*Article N°2*/
 .Accueil #demographie{
   width: 100%;
@@ -522,9 +535,10 @@ button {
 
 .Accueil #monnaie{
   display: grid;
-  grid-template-columns: 45% 45%;
+  grid-template-columns: 40% 43%;
   grid-auto-rows: auto;
-  gap: 0.5em;
+  gap: 1em;
+  justify-content: center;
   text-align: center;
   align-items: center;
   justify-items: center;
@@ -586,11 +600,11 @@ button {
   width: 100%;
   text-align: center;
 }
-.Accueil #langues:not(ul){
+.Accueil #langues figure{
 
   text-align: center;
 }
-.Accueil #territoire:not(ul){
+.Accueil #territoire figure{
 
   text-align: center;
 }
