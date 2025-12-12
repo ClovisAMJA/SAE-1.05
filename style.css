@@ -257,96 +257,324 @@ button {
   color: #F2CB05;
 }
 
-/*Style des éléments page d'Accueil*//*-------------------------------*/
-
-.Accueil article{
+ .Accueil article{
 
   overflow: auto;
-}
-.Accueil article figure{
-
-  float: right;
-}
-
-.Accueil #carte{
-
-  width: 450px;
-  height: 300px;
 }
 
 .Accueil article h3{
 
-  font-size: 1.5em;
+  text-align: center;
+  width: 60%;
+  font-size: 2.5em;
+  padding-bottom: 1.2em;
+  border-bottom: 2px solid black;
 }
 
 .Accueil article p{
 
-  line-height: 1.2em;
+  line-height: 1.6em;
 }
 
-.Accueil iframe{
+.Accueil #presentationEsp > div{
 
-  width:600px;
-  height: 350px;
-  border:0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+.Accueil #presentationEsp > div > #diaporama{
+  width: 500px;
+  height: 300px;
   border-radius: 10px;
+  position: relative;
+  overflow: hidden;
 }
 
-.Accueil #devise{
+.Accueil #diaporama > div{
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 1s linear;
+  animation: cycle 12s linear infinite;
+  animation-play-state: paused;
+  animation-fill-mode: both;
+}
+
+.Accueil #diaporama > div:nth-child(1) {
+  background-image: url('images/iloveimg-resized/imageEsp1.png');
+  animation-delay: 0s;
+}
+
+.Accueil #diaporama > div:nth-child(2) {
+  background-image: url('images/iloveimg-resized/imageEsp2.jpg');
+  animation-delay: -4s;
+}
+
+.Accueil #diaporama > div:nth-child(3) {
+  background-image: url('images/iloveimg-resized/imageEsp3.png');
+  animation-delay: -8s;
+}
+
+.Accueil #presentationEsp:hover #diaporama > div {
+  animation-play-state: running;
+}
+
+.Accueil #diaporama > div:first-child{
+  opacity: 1;
+  z-index: 1;
+}
+
+.Accueil #diaporama > div:first-child {
+  opacity: 1;
+  z-index: 1;
+}
+
+@keyframes cycle {
+  0% { opacity: 0; z-index: 0; }
+  4.1667% { opacity: 1; z-index: 2; }
+  29.1667% { opacity: 1; z-index: 2; }
+  33.3333% { opacity: 0; z-index: 0; }
+  100% { opacity: 0; z-index: 0; }
+}
+
+.Accueil #presentationEsp > div > p{
+  width: 50%;
+  text-align: justify;
+}
+
+/*Article N°2*/
+.Accueil #demographie{
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.Accueil #demographie input[type="radio"]{ display: none; }
+.Accueil #slides-dem{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.Accueil #slides-dem > div{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.Accueil #slides-dem > div div{
+  width: 48%;
+  color: #000;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1.7em;
+  margin-left: 2em;;
+}
+.Accueil #slides-dem > div div h4{ 
+  margin: 0 0 0.4em 0; 
+  font-size: 1.4em; 
+}
+.Accueil #slides-dem > div div p{
+  margin: 0.2em 0; 
+  font-size: 1em; 
+}
+.Accueil #slides-dem > div figure{ 
+  width: 48%; 
+  text-align: center; 
+}
+.Accueil #slides-dem > div figure img{ 
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 10px; 
+}
+
+.Accueil #demographie #s0:checked ~ #slides-dem > div:nth-child(1),
+.Accueil #demographie #s1:checked ~ #slides-dem > div:nth-child(2),
+.Accueil #demographie #s2:checked ~ #slides-dem > div:nth-child(3){
+  opacity: 1; z-index: 2;
+}
+
+.Accueil #slides-dem > div label:first-of-type,
+.Accueil #slides-dem > div label:last-of-type{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.65);
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.25em;
+  line-height: 1;
+}
+.Accueil #slides-dem > div label:first-of-type{ 
+  left: 10px; 
+}
+.Accueil #slides-dem > div label:last-of-type{ 
+  right: 10px; 
+}
+
+.Accueil #demographie #s0:checked ~ #slides-dem > div:nth-child(1){ 
+  opacity:1; 
+}
+/*Article N°3*/
+
+.Accueil #symboles{
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-auto-rows: auto;
+  gap: 0.5em;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.Accueil #symboles h3{
+  grid-column: 1 / -1;
+  margin: 0 0 0.5em 0;
+}
+
+.Accueil #symboles p:nth-of-type(2){
+  grid-row: 2;
+  grid-column: 1;
+}
+.Accueil #symboles p:nth-of-type(1){
+  grid-row: 2;
+  grid-column: 2;
+  font-size: 3.3em;
+  border: 1px solid #383838;
+  border-radius: 10px;
+  padding: 1.2em;
+  box-shadow: 3px 3px 6px rgba(56,56,56,0.18);
+  color: #111;
+  text-align: left;
+  font-family: "Boogaloo";
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.Accueil #symboles figure:nth-of-type(1){
+  grid-row: 3;
+  grid-column: 1;
+  height: 200px;
+  width: 350px;
+}
+.Accueil #symboles p:nth-of-type(3){
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.Accueil #symboles figure img{ 
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 10px; 
+}
+
+/*Article N°4*/
+
+.Accueil #monnaie{
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-auto-rows: auto;
+  gap: 0.5em;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.Accueil #monnaie h3{
+  grid-column: 1 / -1;
+  margin: 0 0 0.5em 0;
+}
+
+.Accueil #monnaie p:nth-of-type(1){
+  grid-row: 2;
+  grid-column: 1;
+}
+.Accueil #monnaie figure:nth-of-type(1){
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.Accueil #monnaie figure:nth-of-type(2){
+  grid-row: 3;
+  grid-column: 1;
+}
+.Accueil #monnaie p:nth-of-type(2){
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.Accueil #monnaie figure img{ 
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 10px; 
+}
+
+.Accueil #monnaie img{ 
+  width: 150px;
+}
+
+/*Articles N°5 et N°6*/
+
+.Accueil #accessibilite {
 
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
-  flex: 1 1 auto;
+}
+.Accueil #accessibilite > article {
+  width: 48%;
+}
+.Accueil #accessibilite > #langues img{
+  height:270px;
+}
+.Accueil #accessibilite > #territoire img{
+  height:270px;
 }
 
-.Accueil #armoiries {
+.Accueil #accessibilite h3{
+
+  width: 100%;
+  text-align: center;
+}
+.Accueil #langues:not(ul){
+
+  text-align: center;
+}
+.Accueil #territoire:not(ul){
+
+  text-align: center;
+}
+
+/*Article n°7*/
+.Accueil #histoire div{
 
   display: flex;
   flex-direction: row-reverse;
-  flex-wrap: wrap;
   justify-content: space-around;
-  flex: 1 1 auto;
+  align-items: center;
 }
+.Accueil #histoire img{
 
-.Accueil #armoiries img{
-
-  width: 300px;
-  height:200px;
-}
-
-.Accueil #devise img{
-
-  width: 140px;
-  height:200px;
-}
-
-.Accueil #anciennemonnaie {
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  flex: 1 1 auto;
-}
-
-.Accueil #euro {
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  flex: 1 1 auto;
-}
-
-
-.Accueil #anciennemonnaie img{
-
-  width: 300px;
-  height:200px;
-}
-
-.Accueil #euro img{
-
-  width: 300px;
-  height:200px;
+  height: 300px;
+  margin-left: 1em;
 }
