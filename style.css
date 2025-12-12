@@ -50,6 +50,7 @@ header:not(main header) h1 {
 
 header:not(main header) li {
   display: inline-block;
+  position: relative;
 }
 
 header:not(main header) a {
@@ -95,9 +96,38 @@ header:not(main header) li:nth-of-type(4) div {
   background-image: url('assets/imgs/icons/icon_gastronomie_jaune.png');
 }
 
-/* Effets au survol */
 header:not(main header) a:hover {
   background-color: #F2CB05;
+  color: #A61420;
+}
+
+header:not(main header) li ul{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #A61420;
+  padding: 0.3em 0;
+  border-radius: 8px;
+  min-width: 160px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+  z-index: 2000;
+}
+
+header:not(main header) li:hover > ul{
+  display: block;
+}
+
+header:not(main header) li ul li{ display: block; margin: 0; }
+header:not(main header) li ul li a{
+  display: block;
+  padding: 0.45em 0.9em;
+  color: #F2CB05;
+  text-decoration: none;
+  white-space: nowrap;
+}
+header:not(main header) li ul li a:hover{
+  background: #F2CB05;
   color: #A61420;
 }
 
