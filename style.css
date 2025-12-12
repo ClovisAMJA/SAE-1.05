@@ -147,10 +147,92 @@ main {
   margin-top: 7.5em;
 }
 
+
 /*Style du footer*//*---------------------------------------------*/
 footer {
+  position: absolute;
+  right: 0;
+  left: 0;
 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0.3em 1em;
+
+  background-color: #383838;
+  color: #F2CB05;
 }
+
+footer div {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 0.5em;
+
+  align-items: center;
+  justify-content: center;
+}
+
+footer img {
+  border-radius: 0;
+  width: 90px;
+  height: auto;
+}
+
+footer a {
+  text-decoration: none;
+  color: #F29F05;
+
+  font-variant: small-caps;
+
+
+  cursor: pointer;
+}
+
+/*Bouton haut de page*//*---------------------------------------------*/
+a button {
+
+  width: 50px;
+  height: 50px;
+
+  background-color: #F2CB05;
+  background-image: url('assets/imgs/icons/icon_fleche_rouge.png');
+  background-size: contain;
+
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  transition: background-image 0.5s, background-color 0.5s;
+}
+
+a button:hover {
+  background-color: #A61420;
+  background-image: url('assets/imgs/icons/icon_fleche_jaune.png');
+}
+
+footer a p {
+  opacity: 0;
+
+  position: absolute;
+  bottom: 4.5em;
+  right:  0.5em;
+  background-color: #383838;
+  color: #D9D9D9;
+
+  padding: 0.4em;
+  border-radius:  10px;
+
+  transition: opacity 0.5s;
+}
+
+footer a:hover p {
+  display: block;
+  opacity: 1;
+}
+
 /*Style du menu*//*-----------------------------------------------*/
 details {
 
@@ -285,6 +367,7 @@ article div:nth-of-type(1) input {
   margin: 0 0.5em;
 }
 
+
 .Accueil article {
 
   float: right;
@@ -302,6 +385,11 @@ article div:nth-of-type(1) input {
 /*Style du paragraphe*//*-----------------------------------------*/
 p {
 
+}
+
+/*Style des blockquote *//*-----------------------------------------*/
+blockquote {
+  margin: 0 1em;
 }
 /*Style des tableaux *//*----------------------------------------------*/
 
@@ -448,3 +536,429 @@ img {
   height: 5em;
   border-radius: 25px;
 }
+}
+
+
+
+
+/*Style de yamal*//*-----------------------------------------*/
+
+
+
+
+.Yamal main section:nth-of-type(1){
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 1.2em;
+}
+
+.Yamal main section:nth-of-type(1) article:nth-last-child(2){
+  width: 50%;
+}
+
+
+
+/*Application des grilles sur les 3 premiers articles*/
+
+
+.Yamal section:nth-of-type(1) article:nth-of-type(1){
+  display : grid;
+  grid-template-columns: repeat(10,10%);
+  grid-template-rows: repeat(2,50%);
+ }
+
+/*article 1 sur la présentation*/
+
+
+
+.Yamal section:nth-of-type(1) article:nth-of-type(1) div:nth-of-type(1){
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  text-align: center;
+}
+
+
+
+.Yamal section:nth-of-type(1) article:nth-of-type(1) div:nth-of-type(2){
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 5;
+  grid-column-end: 10;
+}
+
+.Yamal section:nth-of-type(1) article:nth-of-type(1) figure:nth-of-type(1) img{
+  width: 50%;
+  height: 50%;
+}
+
+
+/*article 2 sur ou le retrouver*/
+
+.Yamal section:nth-of-type(1) article:nth-of-type(2){
+  display : grid;
+  grid-template-columns: repeat(10,10%);
+  grid-template-rows: repeat(10,10%);
+  height: 20em;
+ }
+
+.Yamal section:nth-of-type(1) article:nth-of-type(2) div{
+  grid-area: 1/10/1/1
+}
+
+.Yamal section:nth-of-type(1) article:nth-of-type(2) p:nth-of-type(1){
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 6;
+  grid-column-end: 10;
+}
+
+.Yamal section:nth-of-type(1) article:nth-of-type(2) p:nth-of-type(2){
+  grid-row-start: 7;
+  grid-row-end: 8;
+  grid-column-start: 6;
+  grid-column-end: 10;
+}
+
+
+ .Yamal section:nth-of-type(1) article:nth-of-type(2) img:nth-of-type(1) img:nth-of-type(3){
+  width: 32px;
+  height: 32px;
+}
+
+
+
+.Yamal section:nth-of-type(1) article:nth-of-type(2) figure:nth-of-type(1){
+  grid-row-start:2;
+  grid-column-start: 2;
+}
+
+.Yamal section:nth-of-type(1) article:nth-of-type(2) figure:nth-of-type(2){
+  grid-row-start:5;
+  grid-column-start: 1;
+}
+
+
+.Yamal section:nth-of-type(1) article:nth-of-type(2) figure:nth-of-type(1) img{
+  width: 160px;
+  height: 100px;
+}
+
+
+.Yamal section:nth-of-type(1) article:nth-of-type(2) figure:nth-of-type(2) img{
+  width: 275px;
+  height: 175px;
+}
+
+/*article 3 sur les activités*/
+
+
+.Yamal article:nth-of-type(3) figure:nth-of-type(1) img{
+  width: 300px;
+  height: 170px;
+}
+
+/*article 4 sur la biographie*/
+
+
+
+.Yamal section:nth-of-type(2) article:nth-of-type(1){
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 1 1 300px;
+ }
+
+ .Yamal section:nth-of-type(2) article:nth-of-type(1) p{
+  width: fit-content;
+ }
+
+
+
+.Yamal section:nth-of-type(2) article:nth-of-type(1) img{  
+  display: flex;
+  flex: 1 1 100px;
+  width: 30%;
+  height: 30%;
+  float: right;
+  margin-left: 1em;
+}
+
+
+/*article 5 sur la formation*/
+
+
+/*article 6 sur les débuts professionnel*/
+
+
+/*article 7 sur le palmares*/
+
+/*article 8 sur les débuts avec la nation*/
+
+
+
+
+
+
+
+
+
+
+
+/* Page guernica *//*----------------------------------------------*/
+.guernica article{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+  line-height: 1.6em;
+}
+.guernica section{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin: 0;
+}
+.guernica figure:nth-of-type(1){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.guernica figure figcaption {
+  margin-top: 0.4em;
+  font-style: italic;
+}
+.guernica details {
+  padding: 1em;
+  border-radius: 15px;
+}
+.guernica summary {
+  font-family: "Boogaloo", fantasy;
+  font-size: 1.6em;
+}
+.guernica article h3{
+  margin: 0;
+  padding: 0;
+  font-family: "Boogaloo", fantasy;
+  font-size: 1.5em;
+}
+
+
+
+/* Page Paëlla *//*----------------------------------------------*/
+.paella section {
+  display: grid;
+
+  grid-template-columns: repeat(46, 2.17%);
+  grid-template-rows: repeat(71, 30px);
+}
+
+  /* Bloc Recettes */
+.paella section > article:nth-of-type(1) {
+  grid-area: 1 / 1 / 28 / 31;
+}
+
+.paella section > article:nth-of-type(1) div:not(div div) {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.paella section > article:nth-of-type(1) input {
+  background-color: #F2CB05;
+  border: none;
+  width: 2em;
+  height: 1.2em;
+  text-align: center;
+
+  border-bottom: 1px solid #383838;
+
+  font-family: "Boogaloo", fantasy;
+  font-size: 1.5em;
+
+  align-self: center;
+}
+
+.paella section > article:nth-of-type(1) select {
+  background-color: #A61420;
+  color: #F2CB05;
+
+  border: none;
+  font-size: 1em;
+  padding: 0.3em;
+  border-radius: 10px;
+}
+
+.paella section > article:nth-of-type(1) select:focus {
+  border-radius: 10px 10px 0 0;
+}
+
+.paella section > article:nth-of-type(1) h3 {
+  margin-bottom: 0.2em;
+
+  font-family: "Boogaloo", fantasy;
+  font-size: 1.7em;
+}
+
+.paella section > article:nth-of-type(1) ul,
+.paella section > article:nth-of-type(1) ol {
+  margin-top: 0;
+}
+
+.paella section > article:nth-of-type(1) li {
+  margin-bottom: 0.25em;
+}
+
+.paella section > article:nth-of-type(1) img:nth-of-type(1) {
+  position: relative;
+  left: 22em;
+  bottom: 37em;
+
+  z-index: 1;
+  width: 33%;
+}
+
+.paella section > article:nth-of-type(1) img:nth-of-type(2) {
+  position: relative;
+  bottom: 30em;
+  width: 33%;
+}
+
+#imgpaella_mixte1 {
+  left: 6em;
+}
+
+#imgpaëlla_fruit_mer0 {
+  bottom: 40em
+}
+
+#imgpaëlla_fruit_mer1 {
+  bottom: 33em
+}
+
+
+  /* Bloc Description */
+.paella section > article:nth-of-type(2) {
+  grid-area: 1 / 31 / 12 / 47;
+}
+
+  /* Bloc origine */
+.paella section > article:nth-of-type(3) {
+  grid-area: 12 / 31 / 28 / 47;
+}
+
+.paella section > article:nth-of-type(3) img:not(div img) {
+  margin: 5% 20%;
+}
+
+  /* Bloc activités touristiques*/
+.paella section > article:nth-of-type(4) {
+  grid-area: 28 / 1 / 45 / 47;
+}
+
+.paella section > article:nth-of-type(4) div {
+  display: flex;
+}
+
+.paella section > article:nth-of-type(4) div article div div {
+  flex-direction: column;
+  flex-basis: 40%;
+}
+
+.paella section > article:nth-of-type(4) div article div div {
+  width: 50%;
+}
+
+.paella section > article:nth-of-type(4) div article div div p:nth-of-type(1) {
+  text-align: justify;
+}
+
+.paella section > article:nth-of-type(4) div article div div p:nth-of-type(2) {
+  text-align: center;
+}
+
+.paella section > article:nth-of-type(4) article {
+  width: 45%;
+  margin: 2em auto;
+}
+
+.paella article:nth-of-type(4) div:nth-of-type(2) img {
+  width: 55%;
+}
+
+  /* Bloc Meilleures paëllas */
+.paella section > article:nth-of-type(5) {
+  grid-area: 45 / 1 / 63 / 31;
+}
+
+.paella article:nth-of-type(5) article {
+  width: 100%;
+  align-self: stretch;
+}
+
+.paella article:nth-of-type(5) > div:nth-of-type(2) > img {
+  width:  32px;
+  height: 32px;
+
+  cursor: pointer;
+}
+
+.paella article:nth-of-type(5) > div:nth-of-type(2) > img:nth-of-type(2) {
+  rotate: 180deg;
+}
+
+.paella article:nth-of-type(5) div:nth-of-type(2) {
+  display: flex;
+
+  align-items: center;
+}
+
+.paella article:nth-of-type(5) div:nth-of-type(2) {
+  display: flex;
+}
+
+.paella article:nth-of-type(5) iframe {
+  width: 100%;
+  height: 18em;
+
+  border: none;
+}
+
+  /* Bloc Consommation */
+.paella section > article:nth-of-type(6) {
+  grid-area: 45 / 31 / 63 / 47;
+}
+
+
+  /* Bloc citation */
+.paella section > article:nth-of-type(7) {
+  grid-area: 63 / 7 / 71 / 24;
+}
+
+.paella section > article:nth-of-type(7) div:nth-of-type(2) img {
+  width: 45%;
+
+}
+
+  /*Bloc Le saviez-vous ? */
+.paella section > article:nth-of-type(8) {
+  grid-area: 63 / 25 / 71 / 42;
+}
+
+.paella section > article:nth-of-type(8) div:nth-of-type(2) img {
+  width: 30%;
+}
+
+.paella section > article:nth-of-type(8) p {
+  margin: 1em;
+}
+
+.paella section > article:nth-of-type(7) div:nth-of-type(2),
+.paella section > article:nth-of-type(8) div:nth-of-type(2) {
+  display: flex;
+  flex-direction: row;
+}
+
