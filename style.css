@@ -1070,20 +1070,17 @@ mark {
   position: relative;
   bottom: 30em;
   width: 33%;
+  left: 15em;
 }
 
-#imgpaella_mixte1 {
-  left: 6em;
-}
 
 #imgpaëlla_fruit_mer0 {
-  bottom: 40em
+  bottom: 40em;
 }
 
 #imgpaëlla_fruit_mer1 {
-  bottom: 33em
+  bottom: 33em;
 }
-
 
 /* Bloc Description */
 .paella section > article:nth-of-type(2) {

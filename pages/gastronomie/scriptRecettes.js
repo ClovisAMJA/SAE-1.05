@@ -221,7 +221,7 @@ function displayRecipe(amountOfPeople, recipe) {
     }
 
     recipeBlock.querySelector("figure").innerHTML = recipesList[recipe]?.images?.map((imgLink, i) => {
-        return `<img src="${imgLink}" id="img${recipe}${i}" alt="Image de la recette de ${recipesList[recipe].name}"> title="${recipesList[recipe].name}">`;
+        return `<img src="${imgLink}" id="img${recipe}${i}" alt="Image de la recette de ${recipesList[recipe].name}" title="Représentation de la ${recipesList[recipe].name}">`;
     }).join("\n") || "";
 }
 
