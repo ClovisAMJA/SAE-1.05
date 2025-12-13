@@ -1288,6 +1288,7 @@ mark {
 }
 
 .Accueil #slides-dem > div div{
+  flex-direction: column;
   width: 48%;
   color: #000;
   text-align: center;
@@ -1309,15 +1310,15 @@ mark {
   text-align: center;
 }
 .Accueil #slides-dem > div figure img{
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
+  width:  100%;
+  height:  100%;
 }
 
 .Accueil #demographie #s0:checked ~ #slides-dem > div:nth-child(1),
 .Accueil #demographie #s1:checked ~ #slides-dem > div:nth-child(2),
 .Accueil #demographie #s2:checked ~ #slides-dem > div:nth-child(3){
-  opacity: 1; z-index: 2;
+  opacity: 1;
+  z-index: 2;
 }
 
 .Accueil #slides-dem > div label:first-of-type,
@@ -1490,6 +1491,7 @@ mark {
 }
 .Accueil #histoire img{
 
-  height: 300px;
+  width: 40%;
+  height: 40%;
   margin-left: 1em;
 }
