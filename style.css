@@ -54,7 +54,7 @@ body {
 header, h1, h2, h3, h4, h5, h6, input,
 section div article div a,
 .guernica summary,
-.Accueil #symboles p:nth-of-type(1) {
+.Accueil main > div:nth-of-type(1) article:nth-of-type(1) p:nth-of-type(1) {
   font-family: "Boogaloo", fantasy;
 }
 
@@ -1144,15 +1144,15 @@ mark {
 }
 
 .Accueil #histoire div,
-.Accueil #accessibilite,
-.Accueil #presentationEsp > div {
+.Accueil main > div:nth-of-type(2),
+.Accueil main > article:nth-of-type(1) > div {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 
-.Accueil #presentationEsp > div > #diaporama{
+.Accueil main > article:nth-of-type(1) > div > #diaporama{
   width: 500px;
   height: 300px;
   border-radius: 10px;
@@ -1189,7 +1189,7 @@ mark {
   animation-delay: -8s;
 }
 
-.Accueil #presentationEsp:hover #diaporama > div {
+.Accueil main > article:nth-of-type(1):hover #diaporama > div {
   animation-play-state: running;
 }
 
@@ -1198,7 +1198,7 @@ mark {
   z-index: 1;
 }
 
-.Accueil #presentationEsp > div > p{
+.Accueil main > article:nth-of-type(1) > div > p{
   width: 50%;
   text-align: justify;
 }
@@ -1301,7 +1301,7 @@ mark {
 }
 /*Article N°3*/
 
-.Accueil #symboles{
+.Accueil main > div:nth-of-type(1) article:nth-of-type(1){
   display: grid;
   grid-template-columns: 45% 45%;
   grid-auto-rows: auto;
@@ -1310,16 +1310,16 @@ mark {
   align-items: center;
 }
 
-.Accueil #symboles h3{
+.Accueil main > div:nth-of-type(1) article:nth-of-type(1) h3{
   grid-column: 1 / -1;
   margin: 0 0 0.5em 0;
 }
 
-.Accueil #symboles p:nth-of-type(2){
+.Accueil main > div:nth-of-type(1) article:nth-of-type(1) p:nth-of-type(2){
   grid-row: 2;
   grid-column: 1;
 }
-.Accueil #symboles p:nth-of-type(1){
+.Accueil main > div:nth-of-type(1) article:nth-of-type(1) p:nth-of-type(1){
   grid-row: 2;
   grid-column: 2;
   font-size: 3.3em;
@@ -1334,18 +1334,18 @@ mark {
 
 }
 
-.Accueil #symboles figure:nth-of-type(1){
+.Accueil main > div:nth-of-type(1) article:nth-of-type(1) figure:nth-of-type(1){
   grid-row: 3;
   grid-column: 1;
   height: 200px;
   width: 350px;
 }
-.Accueil #symboles p:nth-of-type(3){
+.Accueil main > div:nth-of-type(1) article:nth-of-type(1) p:nth-of-type(3){
   grid-row: 3;
   grid-column: 2;
 }
 
-.Accueil #symboles figure img{
+.Accueil main > div:nth-of-type(1) article:nth-of-type(1) figure img{
   max-width: 100%;
   height: auto;
   border-radius: 10px;
@@ -1353,7 +1353,7 @@ mark {
 
 /*Article N°4*/
 
-.Accueil #monnaie{
+.Accueil main > div:nth-of-type(1) article:nth-of-type(2){
   display: grid;
   grid-template-columns: 40% 43%;
   grid-auto-rows: auto;
@@ -1362,56 +1362,56 @@ mark {
   text-align: center;
 }
 
-.Accueil #monnaie h3{
+.Accueil main > div:nth-of-type(1) article:nth-of-type(2) h3{
   grid-column: 1 / -1;
   margin: 0 0 0.5em 0;
 }
 
-.Accueil #monnaie p:nth-of-type(1){
+.Accueil main > div:nth-of-type(1) article:nth-of-type(2) p:nth-of-type(1){
   grid-row: 2;
   grid-column: 1;
 }
-.Accueil #monnaie figure:nth-of-type(1){
+.Accueil main > div:nth-of-type(1) article:nth-of-type(2) figure:nth-of-type(1){
   grid-row: 2;
   grid-column: 2;
 }
 
-.Accueil #monnaie figure:nth-of-type(2){
+.Accueil main > div:nth-of-type(1) article:nth-of-type(2) figure:nth-of-type(2){
   grid-row: 3;
   grid-column: 1;
 }
-.Accueil #monnaie p:nth-of-type(2){
+.Accueil main > div:nth-of-type(1) article:nth-of-type(2) p:nth-of-type(2){
   grid-row: 3;
   grid-column: 2;
 }
 
-.Accueil #monnaie figure img{
+.Accueil main > div:nth-of-type(1) article:nth-of-type(2) figure img{
   max-width: 100%;
   height: auto;
   border-radius: 10px;
 }
 
-.Accueil #monnaie img{
+.Accueil main > div:nth-of-type(1) article:nth-of-type(2) img{
   width: 150px;
 }
 
 /*Articles N°5 et N°6*/
-.Accueil #accessibilite > article {
+.Accueil main > div:nth-of-type(2) > article {
   width: 48%;
 }
-.Accueil #accessibilite > #langues img,
-.Accueil #accessibilite > #territoire img {
+.Accueil main > div:nth-of-type(2) > article:nth-of-type(1) img,
+.Accueil main > div:nth-of-type(2) > #territoire img {
   height: 270px;
 }
 
 
-.Accueil #accessibilite h3{
+.Accueil main > div:nth-of-type(2) h3{
   width: 100%;
 }
 
-.Accueil #langues figure,
+.Accueil article:nth-of-type(1) figure,
 .Accueil #territoire figure,
-.Accueil #accessibilite h3 {
+.Accueil main > div:nth-of-type(2) h3 {
   text-align: center;
 }
 
