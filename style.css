@@ -29,7 +29,7 @@
 
 @keyframes anim-yamal{
   100% {
-    transform: scale(1.8) translateY(30px) translate(70px);
+    transform: scale(1.7) translateY(30px) translate(90px);
     z-index: 2;
     animation-play-state: paused;
 
@@ -38,7 +38,7 @@
 
 @keyframes anim-yamal2{
   100% {
-    transform: scale(1.8) translateY(-20px) translate(-60px);
+    transform: scale(1.7) translateY(-30px) translate(-60px);
     z-index: 2;
     animation-play-state: paused;
   }
@@ -552,12 +552,17 @@ img {
   color:#000;
 }
 
+.Yamal iframe{
+  width:auto;
+  height:80%;
+}
+
 .Yamal main a:hover{
   color:#383838
 }
 
 .Yamal main a{
-  color:#A61420
+  color:#A61420;
 }
 
 
@@ -565,7 +570,7 @@ img {
   flex-shrink: 1;
   width: 100%;
   padding: 0;
-  justify-content: space-between;
+  justify-content:center;
   flex-wrap: nowrap;
 }
 
@@ -609,6 +614,7 @@ img {
 
 mark {
   color: #A61420;
+  background-color: #F2CB05;
 }
 
 .Yamal main section:nth-of-type(1){
@@ -646,6 +652,10 @@ mark {
   grid-column-start: 6;
   grid-column-end: 10;
   text-align: center;
+}
+
+.Yamal main section:nth-of-type(1) div article:nth-of-type(1) div{
+  justify-content: left;
 }
 
 
@@ -690,6 +700,9 @@ mark {
 .Yamal section:nth-of-type(1) div article:nth-of-type(2) figure:nth-of-type(1) img{
   width: 300px;
   height: 170px;
+}
+.Yamal main section:nth-of-type(1) div article:nth-of-type(2) div{
+  justify-content: left;
 }
 
 
@@ -854,7 +867,7 @@ mark {
   width: 40%;
   position: relative;
   z-index: 2;
-  left: 2em;
+  left: 4em;
 }
 
 .Yamal main > section:last-child article:nth-of-type(2) figure img:nth-of-type(2){
@@ -862,7 +875,7 @@ mark {
   position: relative;
   z-index: 1;
   bottom: -5em;
-  left: 1em;
+  left: 2em;
 }
 
 /*---------- Animations bas de page------------ */
