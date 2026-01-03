@@ -38,7 +38,7 @@
 
 @keyframes anim-yamal2{
   100% {
-    transform: scale(1.7) translateY(-30px) translate(-60px);
+    transform: scale(1.7) translateY(-30px) translate(-90px);
     z-index: 2;
     animation-play-state: paused;
   }
@@ -599,6 +599,7 @@ img {
 }
 
 .Yamal main section:nth-of-type(1) article:nth-of-type(1) > div figure{
+  margin-top: 0%;
   float: right;
   width: 50%;
 }
@@ -867,7 +868,7 @@ mark {
   width: 40%;
   position: relative;
   z-index: 2;
-  left: 4em;
+  left: 6em;
 }
 
 .Yamal main > section:last-child article:nth-of-type(2) figure img:nth-of-type(2){
