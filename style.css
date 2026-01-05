@@ -110,6 +110,9 @@ header:not(main header) a:not(h1 a) {
   transition: background-color 0.5s, color 0.5s;
 }
 
+header:not(main header) p {
+  margin: 0;
+}
 
 /* Icones des boutons */
 header:not(main header) div {
@@ -1434,4 +1437,185 @@ mark {
   width: 40%;
   height: 40%;
   margin-left: 1em;
+}
+
+
+
+
+
+/* RESPONSIVE : */
+@media screen and (max-width: 780px) {
+  
+
+  /* ------ Header Principal ----------- */
+  header:not(main header) {
+    padding: 0 0.4em;
+  }
+  
+  header:not(main header) nav a p {
+    display: none;
+  }
+
+  header:not(main header) nav div {
+    margin-right: 0;
+  }
+
+  header:not(main header) a:not(h1 a) {
+    padding: 0.3em;
+    margin: 0;
+  }
+
+  header:not(main header) h1 {
+    font-size: 1.2em;
+  }
+
+
+  header:not(main header) li:hover > ul {
+    display: none;
+  }
+
+
+  /* ------ Header des pages ----------- */
+
+  main header h1 {
+    font-size:  1.8em;
+  }
+
+  main header p {
+    width: 100%;
+  }
+
+
+  /* ------ Sections ----------- */
+  .hubPage section p {
+    display: none;
+  }
+  
+  section > div > article {
+    flex-basis: 100%;
+  }
+  
+  section > div > article > img {
+    height: 100px;
+  }
+
+  section div article div a,
+  section > div > article > h3 {
+    margin: auto;
+    text-align: center;
+  }
+
+
+
+  /* ------ Page Paëlla ----------- */
+  .paella section {
+    display: grid;
+
+    grid-template-columns: repeat(14, 7.14%);
+    grid-template-rows: repeat(166, 30px);
+  }
+
+
+  .paella section > article:nth-of-type(1) {
+    grid-area: 76 / 1 / 121 / 15;
+  }
+  .paella section > article:nth-of-type(1) > div {
+    flex-direction: column;
+  }
+  .paella section > article:nth-of-type(1) h2 {
+    font-size: 1.4em;
+  }
+  .paella section > article:nth-of-type(1) select {
+    margin-top: 0.5em;
+  }
+  .paella section > article:nth-of-type(1) img:nth-of-type(1) {
+    display: inline-block;
+    position: static;
+
+    width: 100%;
+  }
+  .paella section > article:nth-of-type(1) img:nth-of-type(2) {
+    display: none;
+  }
+
+
+  .paella section > article:nth-of-type(2) {
+    grid-area: 1 / 1 / 14 / 15;
+  }
+
+  .paella section > article:nth-of-type(3) {
+    grid-area: 14 / 1 / 31 / 15;
+  }
+  .paella section > article:nth-of-type(3) img:not(div img) {
+    margin: 10% 5%;
+  }
+
+  .paella section > article:nth-of-type(4) {
+    grid-area: 32 / 1 / 60 / 15;
+  }
+
+  .paella section > article:nth-of-type(4) div:nth-of-type(2) img {
+    display: none;
+  }
+  .paella section > article:nth-of-type(4) div:nth-of-type(2) {
+    flex-direction: column;
+    margin: 1em 0;
+  }
+  .paella section > article:nth-of-type(4) div:nth-of-type(2) > article {
+    margin: 0.5em 0;
+  }
+  .paella section > article:nth-of-type(4) div:nth-of-type(2) > article div:nth-of-type(1) {
+    flex-direction: column;
+    margin:  0.5em 0;
+  }
+  .paella section > article:nth-of-type(4) div:nth-of-type(2) > article div:nth-of-type(1) p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .paella section > article:nth-of-type(4) div:nth-of-type(2) > article div:nth-of-type(1) h3 {
+    padding: 0.2em;
+    margin: 0;
+  }
+  .paella section > article:nth-of-type(4) div:nth-of-type(2) p {
+    width: 100%;
+  }
+  .paella section > article:nth-of-type(4) div:nth-of-type(2) article {
+    width:  90%;
+  }
+
+  .paella section > article:nth-of-type(5) {
+    grid-area: 60 / 1 / 76 / 15;
+    font-size: 0.9em;
+  }
+  .paella section > article:nth-of-type(5) article {
+    margin: 0.5em 0;
+  }
+  .paella section > article:nth-of-type(5) div div {
+    flex-direction: column;
+  }
+  .paella section > article:nth-of-type(5) div div h3 {
+    margin: 0;
+  }
+
+  .paella section > article:nth-of-type(6) {
+    grid-area: 121 / 1 / 136 / 15;
+  }
+
+  .paella section > article:nth-of-type(7) {
+    grid-area: 136 / 1 / 151 / 15;
+  }
+
+  .paella section > article:nth-of-type(8) {
+    grid-area: 151 / 1 / 166 / 15;
+  }
+
+  .paella section > article:nth-last-of-type(-n + 2) div:nth-of-type(2) {
+    flex-direction: column;
+  }
+  .paella section > article:nth-last-of-type(-n + 2) div:nth-of-type(2) img {
+    width: 100%;
+  }
+
+
 }
