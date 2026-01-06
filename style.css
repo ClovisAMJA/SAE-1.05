@@ -692,6 +692,8 @@ mark {
 }
 
 /*article 3 sur les activités*/
+
+
 .Yamal section:nth-of-type(1) div > article:nth-of-type(2) ul{
   text-align: left;
 }
@@ -780,6 +782,7 @@ mark {
 .Yamal h4 {
   text-align: center;
   margin: auto;
+  font-size: 2em;
 }
 
 .Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(4) div{
@@ -1625,24 +1628,51 @@ mark {
 
   /* ------ Page Yamal ----------- */
 
-
-
-.Yamal section > article:nth-of-type(1) h2 {
+.Yamal h2 {
     font-size: 1.4em;
     text-align: center;
-    position: relative;
+  }
+
+.Yamal h3{
+    font-size: 1.2em;
   }
 
 .Yamal p {
   font-size: 0.9em;
 }
+/* -------- article sur la présentation --------*/
 
 
 
-.Yamal main > section:nth-of-type(1) article:nth-of-type(1) div{
+
+
+.Yamal main > section:nth-of-type(1) > article:nth-of-type(1) > div:nth-of-type(1){
   display:block;
 }
 
+
+/* -------- article sur la présentation --------*/
+
+.Yamal main > section:nth-of-type(1) > div{
+  display:contents;
+}
+.Yamal main > section:nth-of-type(1) > div article:nth-of-type(1){
+  width: 30%;
+}
+
+.Yamal main > section:nth-of-type(1) > div article:nth-of-type(1) h3{
+  width: fit-content;
+}
+.Yamal section:nth-of-type(1) div article:nth-of-type(1) figure {
+  grid-column-start:1;
+  margin-left: 0%;
+}
+
+
+.Yamal section:nth-of-type(1) div article:nth-of-type(1) figure:nth-of-type(2) img {
+  width: 190px;
+  height: 100px;
+}
 
 
 }
