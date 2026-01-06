@@ -1618,4 +1618,31 @@ mark {
   }
 
 
+
+
+
+
+
+  /* ------ Page Yamal ----------- */
+
+
+
+.Yamal section > article:nth-of-type(1) h2 {
+    font-size: 1.4em;
+    text-align: center;
+    position: relative;
+  }
+
+.Yamal p {
+  font-size: 0.9em;
+}
+
+
+
+.Yamal main > section:nth-of-type(1) article:nth-of-type(1) div{
+  display:block;
+}
+
+
+
 }
