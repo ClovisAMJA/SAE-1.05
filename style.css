@@ -1628,163 +1628,211 @@ mark {
 
   /* ------ Page Yamal ----------- */
 
-.Yamal h2 {
-    font-size: 1.4em;
+  .Yamal h2 {
+      font-size: 1.4em;
+      text-align: center;
+    }
+
+  .Yamal h3{
+      font-size: 1.2em;
+    }
+
+  .Yamal h4{
+    font-size: 1.1em;
+  }
+
+  .Yamal p {
+    font-size: 0.9em;
+  }
+
+  .Yamal main > section:last-child {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 1.2em;
+  }
+
+
+  /* -------- article sur la présentation --------*/
+
+  .Yamal > main > section:nth-of-type(1) > article:nth-of-type(1) h2 {
+    position: static;
+  }
+
+  .Yamal main section:nth-of-type(1) article:nth-of-type(1) > div figure {
+    float: left;
+  }
+
+  .Yamal main section:nth-of-type(1) article:nth-of-type(1) > div figure img{
+    margin-right: 0%;
+    margin-left: 2.5em;
+  }
+
+
+
+  .Yamal main > section:nth-of-type(1) > article:nth-of-type(1) > div:nth-of-type(1){
+    display:block;
+  }
+
+
+  /* -------- article ou le retrouver --------*/
+
+  .Yamal main > section:nth-of-type(1) > div{
+    display:contents;
+  }
+  .Yamal main > section:nth-of-type(1) > div article:nth-of-type(1){
+    width: 30%;
+    height: 18em;
+  }
+
+  .Yamal main > section:nth-of-type(1) > div article:nth-of-type(1) h3{
+    width: fit-content;
+  }
+
+  .Yamal section:nth-of-type(1) div article:nth-of-type(1) figure:nth-of-type(1){
+    grid-column-start: 1;
+    margin-left: 0;
+  }
+
+
+  .Yamal section:nth-of-type(1) div article:nth-of-type(1) figure:nth-of-type(2) {
+    grid-column-start:1;
+    grid-row-start: 6;
+    margin-left: 0%;
+  }
+
+
+  .Yamal section:nth-of-type(1) div article:nth-of-type(1) figure:nth-of-type(2) img {
+    width: 190px;
+    height: 100px;
+  }
+
+
+
+  /* -------- article Biographie--------*/
+
+  .Yamal main > div > section > article:nth-of-type(1) div:nth-of-type(1){
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(1) figure {
+    width: 50%;
+    margin-bottom: auto;
+  }
+
+  .Yamal main > div > section > article:nth-of-type(1) div:nth-of-type(1) figcaption{
+    display: none;
+  }
+
+
+
+  /* -------- article Formation--------*/
+
+
+  .Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(2) div{
+    flex-wrap: wrap;
+    flex-direction: column;
     text-align: center;
   }
 
-.Yamal h3{
-    font-size: 1.2em;
+  .Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(2) figure {
+    width: 50%;
+    margin-top: 0;
   }
 
-.Yamal h4{
-  font-size: 1.1em;
-}
 
-.Yamal p {
-  font-size: 0.9em;
-}
+  /* -------- article débuts pro--------*/
 
-.Yamal main > section:last-child {
-    display: flex;
+
+  .Yamal main > div > section > article:nth-of-type(3) div:nth-of-type(1){
     flex-wrap: wrap;
-    justify-content: center;
-    font-size: 1.2em;
-}
+    flex-direction: column;
+  }
+
+  .Yamal main > div > section > article:nth-of-type(3) div:nth-of-type(1) p {
+    margin: 4%;
+    text-align: center;
+    width: auto;
+  }
 
 
-/* -------- article sur la présentation --------*/
+  /* -------- article Palmarès--------*/
 
-.Yamal > main > section:nth-of-type(1) > article:nth-of-type(1) h2 {
-  position: static;
-}
+  .Yamal main div article:nth-of-type(4) details > div {
+    flex-direction: column;
+  }
 
-.Yamal main section:nth-of-type(1) article:nth-of-type(1) > div figure {
-  float: left;
-}
+  .Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(4) div div:nth-of-type(3) {
+    margin-left: 0%;
+  }
 
-.Yamal main section:nth-of-type(1) article:nth-of-type(1) > div figure img{
-  margin-right: 0%;
-  margin-left: 2.5em;
-}
+  .Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(4) div div:nth-of-type(2){
+    width: auto;
+  }
 
+  .Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(4) figure {
+    width: auto;
+    margin-top: 0%;
+  }
 
+  .Yamal main > div:nth-of-type(1) section article:nth-of-type(4) p {
+    width: 23em;
+    margin-right: 0%;
+    text-align: center;
+  }
 
-.Yamal main > section:nth-of-type(1) > article:nth-of-type(1) > div:nth-of-type(1){
-  display:block;
-}
-
-
-/* -------- article ou le retrouver --------*/
-
-.Yamal main > section:nth-of-type(1) > div{
-  display:contents;
-}
-.Yamal main > section:nth-of-type(1) > div article:nth-of-type(1){
-  width: 30%;
-  height: 18em;
-}
-
-.Yamal main > section:nth-of-type(1) > div article:nth-of-type(1) h3{
-  width: fit-content;
-}
-
-.Yamal section:nth-of-type(1) div article:nth-of-type(1) figure:nth-of-type(1){
-  grid-column-start: 1;
-  margin-left: 0;
-}
-
-
-.Yamal section:nth-of-type(1) div article:nth-of-type(1) figure:nth-of-type(2) {
-  grid-column-start:1;
-  grid-row-start: 6;
-  margin-left: 0%;
-}
-
-
-.Yamal section:nth-of-type(1) div article:nth-of-type(1) figure:nth-of-type(2) img {
-  width: 190px;
-  height: 100px;
-}
+  .Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(4) div div:nth-of-type(3) {
+    width: auto;
+  }
 
 
 
-/* -------- article Biographie--------*/
+/* -------- article debut nation--------*/
 
-.Yamal main > div > section > article:nth-of-type(1) div:nth-of-type(1){
+
+.Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(5) div{
   flex-wrap: wrap;
   flex-direction: column;
+  text-align: center;
 }
 
-.Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(1) figure {
+.Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(5) figure {
   width: 50%;
-  margin-bottom: auto;
-}
-
-.Yamal main > div > section > article:nth-of-type(1) div:nth-of-type(1) figcaption{
-  display: none;
 }
 
 
+/* -------- article aller stade--------*/
 
-/* -------- article Formation--------*/
+
+  .Yamal main > section > article:nth-of-type(1){
+    width: auto;
+    height: 40%;
+    padding-bottom: 3em;
+  }
 
 
-.Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(2) div{
-  flex-wrap: wrap;
-  flex-direction: column;
-  text-align: center;
+  /* -------- article 2 ecussons--------*/
+
+
+  .Yamal main > section > article:nth-of-type(2){
+    height: 30%;
+  }
+
+  .Yamal main > section:last-child article:nth-of-type(2) figure img:nth-of-type(1){
+  width: 40%;
+  position: relative;
+  z-index: 2;
+  left: 6em;
 }
 
-.Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(2) figure {
-  width: 50%;
-  margin-top: 0;
-}
-
-
-/* -------- article débuts pro--------*/
-
-
-.Yamal main > div > section > article:nth-of-type(3) div:nth-of-type(1){
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-.Yamal main > div > section > article:nth-of-type(3) div:nth-of-type(1) p {
-  margin: 4%;
-  text-align: center;
-  width: auto;
-}
-
-
-/* -------- article Palmarès--------*/
-
-.Yamal main div article:nth-of-type(4) details > div {
-  flex-direction: column;
-}
-
-.Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(4) div div:nth-of-type(3) {
-  margin-left: 0%;
-}
-
-.Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(4) div div:nth-of-type(2){
-  width: auto;
-}
-
-.Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(4) figure {
-  width: auto;
-  margin-top: 0%;
-}
-
-.Yamal main > div:nth-of-type(1) section article:nth-of-type(4) p {
-  width: 23em;
-  margin-right: 0%;
-  text-align: center;
-}
-
-.Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(4) div div:nth-of-type(3) {
-  width: auto;
-}
+  .Yamal main > section:last-child article:nth-of-type(2) figure img:nth-of-type(2){
+    width: 40%;
+    position: relative;
+    z-index: 1;
+    bottom: -5em;
+    left: 2em;
+  }
 
 
 
