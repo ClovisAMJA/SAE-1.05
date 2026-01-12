@@ -1820,20 +1820,44 @@ mark {
   }
 
   .Yamal main > section:last-child article:nth-of-type(2) figure img:nth-of-type(1){
-  width: 40%;
-  position: relative;
-  z-index: 2;
-  left: 6em;
-}
+    width: 40%;
+    position: relative;
+    z-index: 2;
+    left: 3.5em;
+  }
 
   .Yamal main > section:last-child article:nth-of-type(2) figure img:nth-of-type(2){
     width: 40%;
     position: relative;
     z-index: 1;
-    bottom: -5em;
-    left: 2em;
+    bottom: -1em;
+    left: 1em;
   }
 
+  #yamal-esp:active{
+    animation: anim-yamal 2s ease 0.3s;
+    animation-fill-mode: forwards;
+  }
 
+  #yamal-barca:active{
+    animation: anim-yamal2 2s ease 0.3s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes anim-yamal{
+    100% {
+      transform: scale(2.2) translateY(15px) translate(10px);
+      z-index: 2;
+      animation-play-state: paused;
+    }
+  }
+
+  @keyframes anim-yamal2{
+    100% {
+      transform: scale(2.2) translateY(5px) translate(-20px);
+      z-index: 2;
+      animation-play-state: paused;
+    }
+  }
 
 }
