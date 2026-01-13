@@ -1129,8 +1129,16 @@ mark {
 
 /* page accueil *//*------------------------------------------------*/
 
+@media screen and (max-width: 480px) {
 
+  .Accueil main:nth-child(1) article{
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .Accueil article h3 {
   text-align: center;
   width: 60%;
