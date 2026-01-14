@@ -1129,19 +1129,52 @@ mark {
 
 /* page accueil *//*------------------------------------------------*/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 
-  .Accueil main:nth-child(1) article{
+  .Accueil {
 
+    margin: 0;
+    padding: 0;
+  }
+  .Accueil main > div{
+
+    width: 100%;
+    margin : 0;
+    padding: 0;
+  }
+  .Accueil main > article{
+
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0.5em;
+    padding: 0;
+  }
+  .Accueil main > article > div{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
-    justify-content: center;
+    padding: 0em;
+    margin: 0;
+  }
+
+  .Accueil article h3 {
+    text-align: center;
+    padding-bottom: 1.2em;
+    padding-top: 1em;
+    border-bottom: 2px solid rgb(0, 0, 0);
+  }
+  .Accueil #diaporama > div, .Accueil > div > div{
+
+    width: 80%;
+    display: inline-block;
+    text-align: center;
+    margin: 0.2em;
   }
 }
 .Accueil article h3 {
+  display: inline-block;
+  margin: 0 auto 1.2em;
   text-align: center;
-  width: 60%;
   padding-bottom: 1.2em;
   border-bottom: 2px solid black;
 }
@@ -1155,13 +1188,17 @@ mark {
 .Accueil main > div:nth-of-type(2),
 .Accueil main > article:nth-of-type(1) > div {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 1rem;
   align-items: center;
 }
 
 
 .Accueil main > article:nth-of-type(1) > div > #diaporama{
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: block;
   height: 300px;
   border-radius: 10px;
   position: relative;
