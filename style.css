@@ -1601,7 +1601,10 @@ mark {
 
 
   .paella section > article:nth-last-of-type(-n + 2) div:nth-of-type(2) img,
-  .paella section > article:nth-of-type(4) div:nth-of-type(2) p {
+  .paella section > article:nth-of-type(4) div:nth-of-type(2) p,
+  .sagrada section:nth-of-type(2) article:nth-of-type(1) p,
+  .guernica section article,
+  .guernica iframe {
     width: 100%;
   }
 
@@ -1610,7 +1613,8 @@ mark {
   .paella section > article:nth-last-of-type(-n + 2) div:nth-of-type(2),
   .paella section > article:nth-of-type(1) > div,
   .paella section > article:nth-of-type(4) div:nth-of-type(2) > article div:nth-of-type(1),
-  .paella section > article:nth-of-type(4) div:nth-of-type(2) {
+  .paella section > article:nth-of-type(4) div:nth-of-type(2),
+  .sagrada section:nth-of-type(2) article:nth-of-type(1) div:nth-of-type(2) {
     flex-direction: column;
   }
 
@@ -1875,26 +1879,14 @@ mark {
     font-size: 1.4em;
   }
 
-  .sagrada article:nth-of-type(1) div:nth-of-type(2){
-    flex-direction:row;
-    flex-wrap: wrap;
-  }
-
+  .sagrada article:nth-of-type(1) div:nth-of-type(2),
   .sagrada section:nth-of-type(2),
-  .sagrada section:nth-of-type(2) > div:nth-of-type(1){
+  .sagrada section:nth-of-type(2) > div:nth-of-type(1),
+  .guernica section {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  
 
-
-  .sagrada section:nth-of-type(2) article:nth-of-type(1) div:nth-of-type(2) {
-    flex-direction: column;
-  }
-
-  .sagrada section:nth-of-type(2) article:nth-of-type(1) p {
-    width: 100%;
-  }
 
   .sagrada section:nth-of-type(2) article:nth-of-type(1) figure {
     display: flex;
@@ -1922,24 +1914,14 @@ mark {
   }
 
   /* ------ Page Guernica ----------- */
-  .guernica section{
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  .guernica figure img{
+
+  .guernica figure img,
+  .guernica iframe {
     max-width: 100%;
     height: auto;
-    
   }
 
-  .guernica section article {
-  width: 100%;
-}
-
-  .guernica iframe{
-    width: 100%;
-    max-width: 100%;
+  .guernica iframe {
     height: 300px;
-
   }
 }
