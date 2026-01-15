@@ -1618,4 +1618,25 @@ mark {
   }
 
 
+  /* ------ Page Guernica ----------- */
+  .guernica section{
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .guernica figure img{
+    max-width: 100%;
+    height: auto;
+    
+  }
+
+  .guernica section article {
+  width: 100%;
+}
+
+  .guernica iframe{
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+
+  }
 }
