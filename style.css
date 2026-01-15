@@ -1516,12 +1516,12 @@ mark {
     display: grid;
 
     grid-template-columns: repeat(14, 7.14%);
-    grid-template-rows: repeat(166, 30px);
+    grid-template-rows: repeat(156, 30px);
   }
 
 
   .paella section > article:nth-of-type(1) {
-    grid-area: 76 / 1 / 121 / 15;
+    grid-area: 66 / 1 / 108 / 15;
   }
   .paella section > article:nth-of-type(1) > div {
     flex-direction: column;
@@ -1544,18 +1544,18 @@ mark {
 
 
   .paella section > article:nth-of-type(2) {
-    grid-area: 1 / 1 / 14 / 15;
+    grid-area: 1 / 1 / 11 / 15;
   }
 
   .paella section > article:nth-of-type(3) {
-    grid-area: 14 / 1 / 31 / 15;
+    grid-area: 11 / 1 / 27 / 15;
   }
   .paella section > article:nth-of-type(3) img:not(div img) {
     margin: 10% 5%;
   }
 
   .paella section > article:nth-of-type(4) {
-    grid-area: 32 / 1 / 60 / 15;
+    grid-area: 27 / 1 / 51 / 15;
   }
 
   .paella section > article:nth-of-type(4) div:nth-of-type(2) img {
@@ -1589,7 +1589,7 @@ mark {
   }
 
   .paella section > article:nth-of-type(5) {
-    grid-area: 60 / 1 / 76 / 15;
+    grid-area: 51 / 1 / 66 / 15;
     font-size: 0.9em;
   }
   .paella section > article:nth-of-type(5) article {
@@ -1603,15 +1603,15 @@ mark {
   }
 
   .paella section > article:nth-of-type(6) {
-    grid-area: 121 / 1 / 136 / 15;
+    grid-area: 108 / 1 / 121 / 15;
   }
 
   .paella section > article:nth-of-type(7) {
-    grid-area: 136 / 1 / 151 / 15;
+    grid-area: 121 / 1 / 137 / 15;
   }
 
   .paella section > article:nth-of-type(8) {
-    grid-area: 151 / 1 / 166 / 15;
+    grid-area: 137 / 1 / 156 / 15;
   }
 
   .paella section > article:nth-last-of-type(-n + 2) div:nth-of-type(2) {
@@ -1673,4 +1673,25 @@ mark {
     margin-bottom: 0;
   }
 
+  /* ------ Page Guernica ----------- */
+  .guernica section{
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .guernica figure img{
+    max-width: 100%;
+    height: auto;
+    
+  }
+
+  .guernica section article {
+  width: 100%;
+}
+
+  .guernica iframe{
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+
+  }
 }
