@@ -1130,17 +1130,22 @@ mark {
 /* page accueil *//*------------------------------------------------*/
 
 @media screen and (max-width: 600px) {
+  .Accueil{
 
-  .Accueil {
-
+    padding-left:0;
+    padding-right: 0;
     margin: 0;
-    padding: 0;
   }
-  .Accueil main > div{
+  article,
+  div,
+  p{
 
-    width: 100%;
-    margin : 0;
-    padding: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .Accueil main > article:nth-of-type(1) > div > p{
+    width: 200px;
+    text-align: justify;
   }
   .Accueil main > article{
 
@@ -1148,6 +1153,7 @@ mark {
     margin: 0;
     margin-bottom: 0.5em;
     padding: 0;
+    height: fit-content;
   }
   .Accueil main > article > div{
     display: flex;
@@ -1163,13 +1169,172 @@ mark {
     padding-top: 1em;
     border-bottom: 2px solid rgb(0, 0, 0);
   }
-  .Accueil #diaporama > div, .Accueil > div > div{
-
-    width: 80%;
-    display: inline-block;
-    text-align: center;
-    margin: 0.2em;
+  .Accueil #diaporama {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
   }
+  .Accueil main #slides-dem > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .Accueil main #slides-dem > div figure{
+    width: 60%;
+    height: auto;
+    margin: 0;
+  }
+  .Accueil main #slides-dem > div > div {
+
+    position: absolute;
+    left: 1em;
+    right: 1em;
+    width: 69%;
+    height: 166px;
+  }
+  .Accueil main #slides-dem > div > div > p,h4{
+
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    z-index: 1000;
+  }
+
+  .Accueil main #slides-dem > div > figure{
+
+    position: absolute;
+    left: 3em;
+    width: 80.2%;
+    top: 3.em;
+    opacity: 0.8;
+  }
+  .Accueil main #slides-dem > div > figure > img{
+
+    border-radius: 10px;
+  }
+  .Accueil main > div:nth-of-type(1) article:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .Accueil main > div:nth-of-type(1) article:nth-of-type(1) figure{
+    width: 100%;
+    margin: 0;
+  }
+
+  .Accueil main > div:nth-of-type(1) article:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .Accueil main > div:nth-of-type(1) article:nth-of-type(2) > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+  }
+
+  .Accueil main > div:nth-of-type(2) > article{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: center;
+    width: 100%;
+  }
+
+  .Accueil main > div:nth-of-type(2) > article h3{
+    width: 100%;
+    margin: 0 0 0.5em 0;
+  }
+
+  .Accueil main > div:nth-of-type(2) > article figure{
+    width: 80%;
+    margin: 0;
+  }
+
+  .Accueil main > div:nth-of-type(2) > article figure img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .Accueil main > div:nth-of-type(2) > article ul{
+    width: 100%;
+  }
+
+  .Accueil main > div:nth-of-type(1) article figure img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+  }
+
+  .Accueil main > div:nth-of-type(1) article:nth-of-type(2) > div figure img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+  }
+
+  .Accueil main > div:nth-of-type(2) > article figure img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+  }
+
+  .Accueil > div > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Accueil main > div:nth-of-type(1) article:nth-of-type(1){
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-auto-rows: auto;
+    gap: 0.8em;
+    text-align: center;
+    align-items: center;
+  }
+
+  .Accueil main > div:nth-of-type(1) article:nth-of-type(1) h3{
+    margin: 0 0 0.5em 0;
+  }
+
+  .Accueil main > div:nth-of-type(1) article:nth-of-type(1) p{
+    grid-column: 1;
+  }
+
+  .Accueil main > div:nth-of-type(1) article:nth-of-type(1) p:nth-of-type(1){
+    font-size: 3.3em;
+    border: 1px solid #383838;
+    border-radius: 10px;
+    padding: 1.2em;
+    box-shadow: 3px 3px 6px rgba(56,56,56,0.18);
+    color: #111;
+    text-align: center;
+  }
+
+  /* Image */
+  .Accueil main > div:nth-of-type(1) article:nth-of-type(1) figure{
+    grid-column: 1;
+    width: 100%;
+  }
+
+  .Accueil main > div:nth-of-type(1) article:nth-of-type(1) figure img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
 }
 .Accueil article h3 {
   display: inline-block;
@@ -1197,12 +1362,13 @@ mark {
 .Accueil main > article:nth-of-type(1) > div > #diaporama{
   width: 100%;
   max-width: 500px;
-  margin: 0 ;
+  margin: 0 auto;
   display: block;
   height: 300px;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .Accueil #diaporama > div{
@@ -1373,8 +1539,6 @@ mark {
   padding: 1.2em;
   box-shadow: 3px 3px 6px rgba(56,56,56,0.18);
   color: #111;
-  text-align: left;
-  font-weight: bold;
   text-align: center;
 
 }
@@ -1446,7 +1610,7 @@ mark {
 }
 .Accueil main > div:nth-of-type(2) > article:nth-of-type(1) img,
 .Accueil main > div:nth-of-type(2) > #territoire img {
-  height: 270px;
+  height: 150px;
 }
 
 
