@@ -696,6 +696,8 @@ mark {
 }
 
 /*article 3 sur les activités*/
+
+
 .Yamal section:nth-of-type(1) div > article:nth-of-type(2) ul{
   text-align: left;
 }
@@ -784,6 +786,7 @@ mark {
 .Yamal h4 {
   text-align: center;
   margin: auto;
+  font-size: 2em;
 }
 
 .Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(4) div{
@@ -1621,6 +1624,258 @@ mark {
     width: 100%;
   }
 
+
+
+
+
+
+
+  /* ------ Page Yamal ----------- */
+
+  .Yamal h2 {
+      font-size: 1.4em;
+      text-align: center;
+    }
+
+  .Yamal h3{
+      font-size: 1.2em;
+    }
+
+  .Yamal h4{
+    font-size: 1.1em;
+  }
+
+  .Yamal p {
+    font-size: 0.9em;
+  }
+
+  .Yamal main > section:last-child {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 1.2em;
+  }
+  .Yamal > main > div > section:nth-of-type(1) article {
+    margin: 10px;
+  }
+
+
+  /* -------- article sur la présentation --------*/
+
+  .Yamal > main > section:nth-of-type(1) > article:nth-of-type(1) h2 {
+    position: static;
+  }
+
+  .Yamal > main > section:nth-of-type(1) > article:nth-of-type(1){
+      height: 16em;
+    }
+
+
+  .Yamal main section:nth-of-type(1) article:nth-of-type(1) > div figure {
+    float: left;
+  }
+
+  .Yamal main section:nth-of-type(1) article:nth-of-type(1) > div figure img{
+    margin-right: 0%;
+    margin-left: 2.5em;
+  }
+
+
+
+  .Yamal main > section:nth-of-type(1) > article:nth-of-type(1) > div:nth-of-type(1){
+    display:block;
+  }
+
+
+  /* -------- article ou le retrouver --------*/
+
+  .Yamal main > section:nth-of-type(1) > div{
+    display:contents;
+  }
+  .Yamal main > section:nth-of-type(1) > div article:nth-of-type(1){
+    width: 30%;
+    height: 15em;
+  }
+
+  .Yamal main > section:nth-of-type(1) > div article:nth-of-type(1) h3{
+    width: fit-content;
+  }
+
+  .Yamal section:nth-of-type(1) div article:nth-of-type(1) figure:nth-of-type(1){
+    grid-column-start: 1;
+    margin-left: 0;
+  }
+
+
+  .Yamal section:nth-of-type(1) div article:nth-of-type(1) figure:nth-of-type(2) {
+    grid-column-start:1;
+    grid-row-start: 6;
+    margin-left: 0%;
+  }
+
+
+  .Yamal section:nth-of-type(1) div article:nth-of-type(1) figure:nth-of-type(2) img {
+    width: 190px;
+    height: 100px;
+  }
+
+
+
+  /* -------- article Biographie--------*/
+
+  .Yamal main > div > section > article:nth-of-type(1) div:nth-of-type(1){
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(1) figure {
+    width: 50%;
+    margin-bottom: auto;
+  }
+
+  .Yamal main > div > section > article:nth-of-type(1) div:nth-of-type(1) figcaption{
+    display: none;
+  }
+
+
+
+  /* -------- article Formation--------*/
+
+
+  .Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(2) div{
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(2) figure {
+    width: 50%;
+    margin-top: 0;
+  }
+
+
+  /* -------- article débuts pro--------*/
+
+
+  .Yamal main > div > section > article:nth-of-type(3) div:nth-of-type(1){
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .Yamal main > div > section > article:nth-of-type(3) div:nth-of-type(1) p {
+    margin: 4%;
+    text-align: center;
+    width: auto;
+  }
+
+
+  /* -------- article Palmarès--------*/
+
+  .Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(4) div div {
+    align-self: center;
+  }
+
+
+  .Yamal main div article:nth-of-type(4) details > div {
+    flex-direction: column;
+  }
+
+  .Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(4) div div:nth-of-type(3) {
+    margin-left: 0%;
+  }
+
+  .Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(4) div div:nth-of-type(2){
+    width: auto;
+  }
+
+  .Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(4) figure {
+    width: auto;
+    margin-top: 0%;
+  }
+
+  .Yamal main > div:nth-of-type(1) section article:nth-of-type(4) p {
+    width: 23em;
+    margin-right: 0%;
+    text-align: center;
+  }
+
+  .Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(4) div div:nth-of-type(3) {
+    width: auto;
+  }
+
+
+
+/* -------- article debut nation--------*/
+
+
+.Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(5) div{
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Yamal main > div:nth-of-type(1) section:nth-of-type(1) article:nth-of-type(5) figure {
+  width: 50%;
+}
+
+
+/* -------- article aller stade--------*/
+
+
+  .Yamal main > section > article:nth-of-type(1){
+    width: auto;
+    height: 40%;
+    padding-bottom: 3em;
+  }
+
+
+  /* -------- article 2 ecussons--------*/
+
+
+  .Yamal main > section > article:nth-of-type(2){
+    height: 30%;
+  }
+
+  .Yamal main > section:last-child article:nth-of-type(2) figure img:nth-of-type(1){
+    width: 40%;
+    position: relative;
+    z-index: 2;
+    left: 3.5em;
+  }
+
+  .Yamal main > section:last-child article:nth-of-type(2) figure img:nth-of-type(2){
+    width: 40%;
+    position: relative;
+    z-index: 1;
+    bottom: -1em;
+    left: 1em;
+  }
+
+  #yamal-esp:active{
+    animation: anim-yamal 2s ease 0.3s;
+    animation-fill-mode: forwards;
+  }
+
+  #yamal-barca:active{
+    animation: anim-yamal2 2s ease 0.3s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes anim-yamal{
+    100% {
+      transform: scale(2.2) translateY(15px) translate(10px);
+      z-index: 2;
+      animation-play-state: paused;
+    }
+  }
+
+  @keyframes anim-yamal2{
+    100% {
+      transform: scale(2.2) translateY(5px) translate(-20px);
+      z-index: 2;
+      animation-play-state: paused;
+    }
+  }
 
   /* ------ Page Sagrada ----------- */
   .sagrada article h3 {
