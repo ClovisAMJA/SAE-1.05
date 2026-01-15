@@ -1197,7 +1197,7 @@ mark {
 .Accueil main > article:nth-of-type(1) > div > #diaporama{
   width: 100%;
   max-width: 500px;
-  margin: 0 auto;
+  margin: 0 ;
   display: block;
   height: 300px;
   border-radius: 10px;
