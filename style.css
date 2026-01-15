@@ -1506,13 +1506,23 @@ mark {
   }
   
   section > div > article > img {
-    height: 100px;
+    height: 200px;
   }
 
   section div article div a,
   section > div > article > h3 {
     margin: auto;
     text-align: center;
+  }
+
+
+  /* ------ Footer ----------- */
+  .Yamal footer {
+    margin-top: 4em;
+  }
+
+  footer img {
+    display: none;
   }
 
 
